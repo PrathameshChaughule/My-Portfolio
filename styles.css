@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background: url("image/2.png") center/cover no-repeat;
+    color: white;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 30px;
+    padding: 20px 10%;
+    background-color: transparent;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.logo span{
+    color: #0ef;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: white;
+    font-weight: 500;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 15px;
+    padding: 5px 2px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.navbar a:hover{
+    color: #12f7ff;
+    text-shadow: 0 0 10px #12f7ff,
+        0 0 20px #12f7ff,
+        0 0 30px #12f7ff;
+    border-bottom: 3px solid #12f7ff;
+}
+
+#menu-icon{
+    color: white;
+    font-size: 1.8rem;
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content h3 span{
+    color: #0ef;
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 10px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content h1{
+    font-size: 45px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-content p{
+    font-size: 16px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+    -webkit-text-stroke: 0.1px black;
+}
+
+.home-img{
+   
+    display: flex;
+
+}
+
+.img-box{
+    text-align: center;
+}
+
+.img-box img{
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #0ef;
+    border: 3px solid #0ef;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2s, 3s;
+}
+
+
+
+.social-media a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 20%;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 15px 30px 0;
+    font-size: 20px;
+    color: #0ef;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.social-media a:hover{
+    color: #1f241f;
+    box-shadow: 0 0 10px #0ef;
+
+}
+
+.social-media a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #0ef;
+    transition: .4s;
+    z-index: -1;
+    border-radius: 20%;
+    
+}
+
+.social-media a:hover::before{
+    width: 100%;
+}
+
+.btn{
+    display: inline-block;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 12px 28px;
+    margin-top: 10px;
+    color: #1f241f;
+    box-shadow: 0 0 10px #0ef;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+}
+
+.btn1 a:hover{
+    color: #0ef;
+    background-image: url("video/starfall.gif");
+    border: 4px solid #0ef;
+    box-shadow: 0 0 20px #0ef;
+    padding: 15px 30px;
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes zoomIn {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-24px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
