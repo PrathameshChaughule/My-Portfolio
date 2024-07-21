@@ -1,58 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header>
-        <div class="logo"><span>P</span>ortfolio.</div>
-        <ul class="navbar">
-            <li><a href="#home" style="--i:1">Home</a></li>
-            <li><a href="#about" style="--i:2">About</a></li>
-            <li><a href="#services" style="--i:3">Services</a></li>
-            <li><a href="#skills" style="--i:4">Skills</a></li>
-            <li><a href="#project" style="--i:5">Project</a></li>
-            <li><a href="#contact" style="--i:6">Contact</a></li>
-        </ul>
-        <div id="menu-icon"><i class='bx bx-menu-alt-right'></i></div>
-    </header>
-    <section class="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Prathamesh Chaughule</h1>
-            <h3>And I'm a <span class="typing"></span></h3>
-            <p>I like to build Interactive things for web. I'm working & learning on lots of different technologies like javascript (ES6), React.js, Node, Express,MangoDB etc and I also familiar with other programming language like C, C++, java, Python etc.</p>
-            <div class="social-media">
-                <a href="#" style="--i:7"><i class='bx bxl-facebook'></i></a>
-                <a href="#" style="--i:8"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" style="--i:9"><i class='bx bxl-linkedin' ></i></a>
-                <a href="#" style="--i:10"><i class='bx bxl-github' ></i></a>
+    <!---Home Section-------------------------------------------->
+    <div class="Home">
+        <header>
+            <div class="logo"><span>P</span>ortfolio.</div>
+            <ul class="navbar">
+                <li><a href="#home" style="--i:1">Home</a></li>
+                <li><a href="#about" style="--i:2">About</a></li>
+                <li><a href="#services" style="--i:3">Services</a></li>
+                <li><a href="#skills" style="--i:4">Skills</a></li>
+                <li><a href="#project" style="--i:5">Project</a></li>
+                <li><a href="#contact" style="--i:6">Contact</a></li>
+            </ul>
+            <i id="menu-icon" class='bx bx-menu'></i>
+        </header>
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hello, It's Me</h3>
+                <h1>Prathamesh Chaughule</h1>
+                <h3>And I'm a <span class="typing"></span></h3>
+                <p>I like to build Interactive things for web. I'm working & learning on lots of different technologies
+                    like javascript (ES6), React.js, Node, Express,MangoDB etc and I also familiar with other
+                    programming language like C, C++, java, Python etc.</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/prathamesh.choughule.31" style="--i:7"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/pratham_chaughule_555/" style="--i:8"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/prathamesh-chaughule-9510942b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="--i:9"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/PrathameshChaughule" style="--i:10"><i class='bx bxl-github'></i></a>
+                </div>
+                <div class="btn1">
+                    <a href="https://drive.google.com/file/d/1DkS_MAc3QYRNEqmLpvA4u5tlyWf4g5P0/view?usp=drivesdk" class="btn">Download CV</a>
+                </div>
             </div>
+            <div class="home-img">
+                <div class="img-box">
+                    <img src="image/1.png" alt="">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--About Section------------------------------------------------------->
+    <section class="about" id="about">
+        <div class="img_about">
+            <img src="image/1.png" alt="">
+        </div>
+        <div class="about_content">
+            <span>Let me introduce myself</span>
+            <h2>About Me</h2>
+            <h3>A story of good</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut magni quasi sapiente minima quo architecto
+                possimus optio accusantium dolores non explicabo, ipsa aspernatur, alias cum. Laudantium sequi nam et
+                ipsam?</p>
             <div class="btn1">
-                <a href="#" class="btn">Download CV</a>
-            </div>
-        </div>
-        <div class="home-img">
-            <div class="img-box">
-                <img src="image/1.png" alt="">
-            </div>
-        </div>
-    </section>
-    <section class="about">
-        <div class="home-img">
-            <div class="img-box">
-                <img src="image/1.png" alt="">
+                <a href="#" class="btn">Read More</a>
             </div>
         </div>
     </section>
 
+
+    <section class="services" id="services">
+        <div class="main-text">
+            <h2>Services</h2>
+        </div>
+        <div class="section-service">
+            <div class="service-box">
+                <i class='bx bx-code-alt service-icon'></i>
+                <h3>Web Development</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut magni quasi sapiente minima quo
+                    architecto possimus optio accusantium dolores non explicabo, ipsa aspernatur, alias cum. Laudantium
+                    sequi nam et ipsam?</p>
+                <div class="btn-box service-btn">
+                    <a href="#" class="btn1">Read More</a>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <i class='fa-solid fa-photo-film service-icon'></i>
+                <h3>Editing</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut magni quasi sapiente minima quo
+                    architecto possimus optio accusantium dolores non explicabo, ipsa aspernatur, alias cum. Laudantium
+                    sequi nam et ipsam?</p>
+                <div class="btn-box service-btn">
+                    <a href="#" class="btn1">Read More</a>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <i class="fa-solid fa-paintbrush service-icon"></i>
+                <h3>Graphic Designer</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut magni quasi sapiente minima quo
+                    architecto possimus optio accusantium dolores non explicabo, ipsa aspernatur, alias cum. Laudantium
+                    sequi nam et ipsam?</p>
+                <div class="btn-box service-btn">
+                    <a href="#" class="btn1">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Skills Section--------------------------------------------------------------->
+    <section class="skills" id="skills">
+        <div class="main-text">
+            <span>Technical and Professional</span>
+            <h2>My Skills</h2>
+        </div>
+        <div class="skill-main">
+
+            <!--Skill Left--------------------------------------------------->
+            <div class="skill-left">
+                <h3>Technical Skills</h3>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>HTML</p>
+                        <p>85%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="html"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>CSS</p>
+                        <p>80%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="css"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>javaScript</p>
+                        <p>75%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="javascript"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>JAVA</p>
+                        <p>85%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="java"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Python</p>
+                        <p>79%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="python"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!--Skill Right------------------------------------------------>
+            <div class="skill-right">
+                <h3>Professional Skills</h3>
+                <div class="circle-bar">
+                    <div class="radial-bars">
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                            </svg>
+                            <div class="percentage">90%</div>
+                            <div class="text">Team Work</div>
+                        </div>
+                    </div>
+                    <div class="radial-bars">
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                            </svg>
+                            <div class="percentage">65%</div>
+                            <div class="text">Creativity</div>
+                        </div>
+                    </div>
+                    <div class="radial-bars">
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                            </svg>
+                            <div class="percentage">75%</div>
+                            <div class="text">Project Management</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Project Section------------------------------------------------->
+    <section class="project" id="project">
+        <div class="main-text1">
+            <h3>Latest Project</h3>
+        </div>
+        <div class="container">
+            <div class="project-gallery">
+                <div class="port-box">
+                    <div class="port-image">
+                        <img src="image/11.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>E-commerce-Product-Page</h3>
+                        <p>Developed a responsive e-commerce product page using HTML, CSS, and JavaScript, featuring an interactive image slider, dynamic product listings, and a functional shopping cart</p>
+                        <a href="https://prathameshchaughule.github.io/E-commerce-Product-Page/"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box">
+                    <div class="port-image">
+                        <img src="image/12.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Pricing Landing Page</h3>
+                        <p>Designed and developed a responsive pricing landing page using HTML, CSS, and JavaScript, featuring a clean layout with detailed pricing plans and clear call-to-action elements.</p>
+                        <a href="https://prathameshchaughule.github.io/Pricing-Landing-Page/"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box">
+                    <div class="port-image">
+                        <img src="image/13.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Registration Form</h3>
+                        <p>Created a user-friendly registration form using HTML and CSS, featuring clear input fields and a clean layout. Ensured a seamless user experience with intuitive design and straightforward validation</p>
+                        <a href="https://prathameshchaughule.github.io/Registration-Form/"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box">
+                    <div class="port-image">
+                        <img src="image/14.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>To Do List Application</h3>
+                        <p>Developed a dynamic to-do list application using HTML, CSS, and JavaScript, featuring task management with add, edit, and delete functionalities. Implemented a clean and responsive design for efficient task organization.</p>
+                        <a href="https://prathameshchaughule.github.io/To-Do-List-Web-Development-/"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box">
+                    <div class="port-image">
+                        <img src="image/16.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Calculator Application</h3>
+                        <p>Developed a functional calculator application using python, implementing arithmetic operations.</p>
+                        <a href="https://github.com/PrathameshChaughule/Calculator_Task_1.git"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box">
+                    <div class="port-image">
+                        <img src="image/15.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>To Do List Application</h3>
+                        <p>Built a to-do list application using python, implementing features for adding, editing, and removing tasks. </p>
+                        <a href="https://github.com/PrathameshChaughule/To_Do_List_Task_2.git"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section------------------------------------------------------------>
+
+    <section class="contact" id="contact">
+        <div class="main-text2">
+            <h2>Contact Me</h2>
+        </div>
+
+        <form action="#">
+            <input type="text" placeholder="Your Name" required>
+            <input type="text" placeholder="Your Email" required>
+            <input type="text" placeholder="Your Address" required>
+            <input type="text" placeholder="Phone Number" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <div class="btn-box formBtn">
+                <button type="submit" class="btn1">Send Message</button>
+            </div>
+        </form>
+    </section>
+
+    <!--Footer Section----------------------------------------------------->
+
+    <footer>
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Prathamesh || All Right Reserved.</p>
+        </div>
+        <a href="#home" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+    </footer>
 
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
