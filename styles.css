@@ -1062,7 +1062,7 @@ header.sticky{
 
 @media(max-width:425px){
     .Home {
-        height: 1045px;
+        min-height: 1045px;
     }
     .skill-left{
         width: 73%;
@@ -1079,7 +1079,7 @@ header.sticky{
         margin-bottom: -23px;
     }
     .about{
-        height: 865px;
+        min-height: 865px;
         gap: 0rem;
     }
     .contact{
@@ -1087,6 +1087,15 @@ header.sticky{
     }
     .footer-text p{
         font-size: 12px;
+    }
+    .home-content h3{
+        font-size: 25px;
+    }
+    .home-content p{
+        font-size: 15px;
+    }
+    .home-content h1{
+        font-size: 33px;
     }
 }
 
