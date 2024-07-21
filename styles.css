@@ -987,7 +987,7 @@ header.sticky{
         gap: 0;
     }
     .Home{
-        height: 953px;
+        height: 870px;
     }
     .about{
         display: ruby-text;
@@ -1001,7 +1001,7 @@ header.sticky{
         margin-top: 30px;
     }
     .img_about img {
-        max-width: 358px;
+        max-width: 300px;
     }
     .img-box img{
         width: 300px;
@@ -1016,7 +1016,7 @@ header.sticky{
         justify-content: center;
         text-align: center;
     }.project{
-        height: 1886px;
+        height: 1454px;
     }
 }
 
@@ -1036,7 +1036,7 @@ header.sticky{
         right: 0;
         left: 0;
         flex-direction: column;
-        background-color: transparent;
+        background: linear-gradient(180deg, #0c0c1d, #111132, transparent);
         backdrop-filter: blur(10px);
         text-align: left;
         padding: 0 5%;
@@ -1060,7 +1060,35 @@ header.sticky{
     } 
 }
 
-
+@media(max-width:425px){
+    .Home {
+        height: 1045px;
+    }
+    .skill-left{
+        width: 73%;
+    }
+    .skill-main{
+        flex-direction: column;
+    }
+    .circle-bar{
+        min-width: 288px;
+    }
+    .port-box{
+        width: 281px;
+        height: 182px;
+        margin-bottom: -23px;
+    }
+    .about{
+        height: 865px;
+        gap: 0rem;
+    }
+    .contact{
+        height: 663px;
+    }
+    .footer-text p{
+        font-size: 12px;
+    }
+}
 
 
 
