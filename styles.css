@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
@@ -9,44 +9,45 @@
     text-decoration: none;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     height: 0;
     width: .5rem;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background: linear-gradient(180deg, #0c0c1d, #111132);
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: #0ef;
     border-radius: 5rem;
 }
 
-.skeleton{
+.skeleton {
     opacity: .7;
     animation: skeleton-loading 1s linear infinite alternate;
 }
 
-@keyframes skeleton-loading{
-    0%{
-        background-color: hsl(200,20%,70%);
+@keyframes skeleton-loading {
+    0% {
+        background-color: hsl(200, 20%, 70%);
     }
-    100%{
-        background-color: hsl(200,20%,95%);
+
+    100% {
+        background-color: hsl(200, 20%, 95%);
     }
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
 }
 
-.Home{
+.Home {
     background: linear-gradient(180deg, #0c0c1d, #111132);
     height: 107vh;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -60,13 +61,13 @@ header{
     backdrop-filter: blur(10px);
 }
 
-header.sticky{
+header.sticky {
     background-color: transparent;
     backdrop-filter: blur(10px);
     padding: 12px 10%;
 }
 
-.logo{
+.logo {
     font-size: 30px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -75,15 +76,15 @@ header.sticky{
     color: white;
 }
 
-.logo span{
+.logo span {
     color: #0ef;
 }
 
-.navbar{
+.navbar {
     display: flex;
 }
 
-.navbar a{
+.navbar a {
     color: white;
     font-weight: 500;
     display: inline-block;
@@ -95,7 +96,7 @@ header.sticky{
     animation-delay: calc(.2s * var(--i));
 }
 
-.navbar a:hover{
+.navbar a:hover {
     color: #12f7ff;
     text-shadow: 0 0 10px #12f7ff,
         0 0 20px #12f7ff,
@@ -103,11 +104,11 @@ header.sticky{
     border-bottom: 3px solid #12f7ff;
 }
 
-.navbar a.active{
+.navbar a.active {
     color: #0ef;
 }
 
-#menu-icon{
+#menu-icon {
     color: white;
     font-size: 1.8rem;
     z-index: 10001;
@@ -116,7 +117,7 @@ header.sticky{
     display: none;
 }
 
-.home{
+.home {
     position: relative;
     width: 100vw;
     height: 80vh;
@@ -128,12 +129,12 @@ header.sticky{
     color: white;
 }
 
-.home-content{
+.home-content {
     max-width: 600px;
     margin-top: 200px;
 }
 
-.home-content h3{
+.home-content h3 {
     font-size: 32px;
     font-weight: 700;
     padding: 10px 0;
@@ -142,17 +143,17 @@ header.sticky{
     animation-delay: .7s;
 }
 
-.home-content h3 span{
+.home-content h3 span {
     color: #0ef;
 }
 
-.home-content h3:nth-of-type(2){
+.home-content h3:nth-of-type(2) {
     margin-bottom: 10px;
     animation: slideTop 1s ease forwards;
     animation-delay: .7s;
 }
 
-.home-content h1{
+.home-content h1 {
     font-size: 45px;
     font-weight: 700;
     margin: -3px 0;
@@ -162,7 +163,7 @@ header.sticky{
     animation-delay: 1s;
 }
 
-.home-content p{
+.home-content p {
     font-size: 17px;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
@@ -170,12 +171,12 @@ header.sticky{
     -webkit-text-stroke: 0.1px black;
 }
 
-.home-img{
+.home-img {
     display: flex;
     margin-top: 200px;
 }
 
-.img-box img{
+.img-box img {
     width: 400px;
     border-radius: 50%;
     box-shadow: 0 0 50px #0ef;
@@ -187,7 +188,7 @@ header.sticky{
 
 
 
-.social-media a{
+.social-media a {
     display: inline-flex;
     width: 40px;
     height: 40px;
@@ -204,13 +205,13 @@ header.sticky{
     animation-delay: calc(.2s * var(--i));
 }
 
-.social-media a:hover{
+.social-media a:hover {
     color: #1f241f;
     box-shadow: 0 0 10px #0ef;
 
 }
 
-.social-media a::before{
+.social-media a::before {
     content: "";
     position: absolute;
     left: 0;
@@ -221,14 +222,14 @@ header.sticky{
     transition: .4s;
     z-index: -1;
     border-radius: 20%;
-    
+
 }
 
-.social-media a:hover::before{
+.social-media a:hover::before {
     width: 100%;
 }
 
-.btn{
+.btn {
     display: inline-block;
     background: #0ef;
     border-radius: 40px;
@@ -245,7 +246,7 @@ header.sticky{
     animation-delay: 2s;
 }
 
-.btn1 a:hover{
+.btn1 a:hover {
     color: #0ef;
     background-image: url("video/starfall.gif");
     border: 4px solid #0ef;
@@ -254,73 +255,80 @@ header.sticky{
 }
 
 @keyframes slideRight {
-    0%{
+    0% {
         transform: translateX(-100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateX(0);
         opacity: 1;
     }
-    
+
 }
 
 @keyframes slideTop {
-    0%{
+    0% {
         transform: translateY(100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateY(0);
         opacity: 1;
     }
-    
+
 }
 
 @keyframes slideBottom {
-    0%{
+    0% {
         transform: translateY(-100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateY(0);
         opacity: 1;
     }
-    
+
 }
 
 @keyframes slideLeft {
-    0%{
+    0% {
         transform: translateX(100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateX(0);
         opacity: 1;
     }
-    
+
 }
 
 @keyframes zoomIn {
-    0%{
+    0% {
         transform: scale(0);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: scale(1);
         opacity: 1;
     }
-    
+
 }
 
 @keyframes floatImage {
-    0%{
+    0% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(-24px);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
@@ -335,7 +343,7 @@ header.sticky{
 
 /*About Section*/
 
-.about{
+.about {
     position: relative;
     width: 100vw;
     min-height: 100vh;
@@ -348,18 +356,18 @@ header.sticky{
     background: linear-gradient(180deg, #0c0c1d, #111132);
 }
 
-.img_about img{
+.img_about img {
     max-width: 400px;
     border-radius: 50%;
     box-shadow: 0 0 50px #0ef;
     border: 3px solid #0ef;
 }
 
-.about_content{
+.about_content {
     max-width: 650px;
 }
 
-.about_content span{
+.about_content span {
     color: #fdfdfd;
     font-size: 20px;
     font-weight: 500;
@@ -367,21 +375,21 @@ header.sticky{
     text-transform: uppercase;
 }
 
-.about_content h2{
+.about_content h2 {
     color: #0ef;
     font-weight: 700;
     font-size: 39px;
     padding: 10px 0;
 }
 
-.about_content h3{
+.about_content h3 {
     font-weight: 600;
     font-size: 31px;
     margin-bottom: .2rem;
     margin-top: -5px;
 }
 
-.about_content p{
+.about_content p {
     color: rgba(255, 255, 255, 0.832);
     font-weight: 300;
     font-size: 18px;
@@ -389,13 +397,13 @@ header.sticky{
     margin-bottom: 1.5rem;
 }
 
-.btn1 .btn{
+.btn1 .btn {
     margin-top: 10px;
 }
 
 /*Services*/
 
-.services{
+.services {
     color: white;
     background: linear-gradient(180deg, #0c0c1d, #111132);
     min-height: 100vh;
@@ -403,33 +411,33 @@ header.sticky{
     width: 100%;
 }
 
-.main-text{
+.main-text {
     width: 100%;
     text-align: center;
     margin-bottom: 3rem;
     color: #0ef;
 }
 
-.main-text h2{
+.main-text h2 {
     font-weight: 700;
     font-size: 40px;
 }
 
-.main-text h2{
+.main-text h2 {
     font-weight: 700;
     font-size: 40px;
 }
 
-.section-service{
+.section-service {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     grid-gap: 2rem;
-    
+
 }
 
-.section-service .service-box{
+.section-service .service-box {
     flex: 1 1 18rem;
     padding: 2rem 1rem 2rem;
     text-align: center;
@@ -438,17 +446,17 @@ header.sticky{
     border-radius: 20px;
 }
 
-.service-btn{
+.service-btn {
     width: auto;
     justify-content: center;
 }
 
-.service-box:hover{
+.service-box:hover {
     transform: scale(1.02);
     box-shadow: 0 0 10px #0ef;
 }
 
-.service-icon{
+.service-icon {
     border: 2px solid #0ef;
     padding: 2rem;
     background: #1f242d;
@@ -462,12 +470,12 @@ header.sticky{
     outline: 3px solid #0ef;
 }
 
-.service-box h3{
+.service-box h3 {
     margin-top: 10px;
     font-size: 1.5rem;
 }
 
-.service-box p{
+.service-box p {
     margin: .5rem 0 1.5rem 0;
     font-weight: 300;
     letter-spacing: 1px;
@@ -475,7 +483,7 @@ header.sticky{
     line-height: 1.6;
 }
 
-.btn-box .btn1{
+.btn-box .btn1 {
     z-index: 100;
     display: inline-block;
     background: #0ef;
@@ -491,7 +499,7 @@ header.sticky{
     transition: .3s;
 }
 
-.btn-box .btn1:hover{
+.btn-box .btn1:hover {
     transform: scale(0.9);
     box-shadow: none;
 }
@@ -499,32 +507,32 @@ header.sticky{
 
 /*Skills Left*/
 
-.skills{
+.skills {
     color: white;
     background: linear-gradient(180deg, #0c0c1d, #111132);
     min-height: 100vh;
     width: 100vw;
 }
 
-.skill-left{
+.skill-left {
     width: 40%;
 }
 
-.main-text span{
+.main-text span {
     color: white;
     font-size: 20px;
 }
 
-.skills .main-text{
+.skills .main-text {
     padding-top: 120px;
- 
+
 }
 
-.skill-bar span{
+.skill-bar span {
     color: #0ef;
 }
 
-.skill-main{
+.skill-main {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -533,24 +541,24 @@ header.sticky{
     gap: 50px;
 }
 
-.skill-bar{
+.skill-bar {
     margin-bottom: 2.3rem;
 }
 
-.skill-main h3{
+.skill-main h3 {
     margin-bottom: 2rem;
     font-size: 1.5rem;
     text-align: center;
 }
 
-.skill-left .skill-bar .info{
+.skill-left .skill-bar .info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
 }
 
-.skill-left .skill-bar .bar{
+.skill-left .skill-bar .bar {
     width: 100%;
     height: 10px;
     background-color: red;
@@ -559,7 +567,7 @@ header.sticky{
     position: relative;
 }
 
-.skill-bar .bar span{
+.skill-bar .bar span {
     width: 50%;
     height: 100%;
     position: absolute;
@@ -570,72 +578,77 @@ header.sticky{
 }
 
 
-.skill-bar .bar .html{
+.skill-bar .bar .html {
     width: 85%;
     animation: html 2s;
 }
 
-.skill-bar .bar .css{
+.skill-bar .bar .css {
     width: 80%;
     animation: css 3s;
 }
 
-.skill-bar .bar .javascript{
+.skill-bar .bar .javascript {
     width: 75%;
     animation: javascript 4s;
 }
 
-.skill-bar .bar .java{
+.skill-bar .bar .java {
     width: 85%;
     animation: java 5s;
 }
 
-.skill-bar .bar .python{
+.skill-bar .bar .python {
     width: 79%;
     animation: python 6s;
 }
 
-@keyframes html{
-    0%{
+@keyframes html {
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 85%;
     }
 }
 
-@keyframes css{
-    0%{
+@keyframes css {
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 80%;
     }
 }
 
-@keyframes javascript{
-    0%{
+@keyframes javascript {
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 75%;
     }
 }
 
-@keyframes java{
-    0%{
+@keyframes java {
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 85%;
     }
 }
 
-@keyframes python{
-    0%{
+@keyframes python {
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 79%;
     }
 }
@@ -643,19 +656,19 @@ header.sticky{
 
 /* Skills Right */
 
-.skill-right{
+.skill-right {
     max-width: 500px;
 }
 
-.circle-bar{
+.circle-bar {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     min-width: 500px;
-       
+
 }
 
-.radial-bars{
+.radial-bars {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -665,23 +678,23 @@ header.sticky{
     margin: 50px;
 }
 
-.radial-bars .radial-bar{
+.radial-bars .radial-bar {
     width: 50%;
     height: 170px;
     margin-bottom: 10px;
     position: relative;
 }
 
-.radial-bars .radial-bar svg{
+.radial-bars .radial-bar svg {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(-90deg);
+    transform: translate(-50%, -50%) rotate(-90deg);
     width: 120px;
     height: 160px;
 }
 
-.radial-bars .radial-bar .progress-bar{
+.radial-bars .radial-bar .progress-bar {
     stroke-width: 10;
     stop-color: black;
     fill: transparent;
@@ -691,13 +704,13 @@ header.sticky{
     animation: animate-bar 1s linear forwards;
 }
 
-@keyframes animate-bar{
-    100%{
+@keyframes animate-bar {
+    100% {
         stroke-dashoffset: -1;
     }
 }
 
-.path{
+.path {
     stroke-width: 10;
     stroke: #0ef;
     fill: transparent;
@@ -706,40 +719,50 @@ header.sticky{
     stroke-linecap: round;
 }
 
-.path-1{animation: animate-path1 1s 1s linear forwards}
-.path-2{animation: animate-path2 1s 1s linear forwards}
-.path-3{animation: animate-path3 1s 1s linear forwards}
+.path-1 {
+    animation: animate-path1 1s 1s linear forwards
+}
+
+.path-2 {
+    animation: animate-path2 1s 1s linear forwards
+}
+
+.path-3 {
+    animation: animate-path3 1s 1s linear forwards
+}
 
 
 
-@keyframes animate-path1{
-    100%{
+@keyframes animate-path1 {
+    100% {
         stroke-dashoffset: 50;
     }
 }
-@keyframes animate-path2{
-    100%{
+
+@keyframes animate-path2 {
+    100% {
         stroke-dashoffset: 175;
     }
 }
-@keyframes animate-path3{
-    100%{
+
+@keyframes animate-path3 {
+    100% {
         stroke-dashoffset: 125;
     }
 }
 
-.radial-bar .percentage{
+.radial-bar .percentage {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 20px;
     font-weight: 600;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
 }
 
-.radial-bar .text{
+.radial-bar .text {
     width: 300px;
     position: absolute;
     text-align: center;
@@ -752,8 +775,8 @@ header.sticky{
     opacity: 0;
 }
 
-@keyframes showText{
-    100%{
+@keyframes showText {
+    100% {
         opacity: 1;
     }
 }
@@ -762,7 +785,7 @@ header.sticky{
 
 /*Project*/
 
-.project{
+.project {
     color: white;
     background: linear-gradient(180deg, #0c0c1d, #111132);
     min-height: 100vh;
@@ -770,7 +793,7 @@ header.sticky{
     padding: 0 10% 0;
 }
 
-.main-text1{
+.main-text1 {
     padding-top: 80px;
     width: 100%;
     text-align: center;
@@ -778,19 +801,19 @@ header.sticky{
     color: #0ef;
 }
 
-.main-text1 h3{
+.main-text1 h3 {
     font-weight: 700;
     font-size: 40px;
 }
 
 
-.project-gallery{
+.project-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     gap: 50px;
 }
 
-.port-box{
+.port-box {
     position: relative;
     border-radius: 15px;
     overflow: hidden;
@@ -804,7 +827,7 @@ header.sticky{
     animation-delay: .7s;
 }
 
-.port-image{
+.port-image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -813,21 +836,21 @@ header.sticky{
 
 }
 
-.port-image img{
+.port-image img {
     width: auto;
     opacity: .5s;
     height: 230px;
     transition: .5s;
 }
 
-.port-content{
+.port-content {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: linear-gradient(rgba(0,0,0,0.2), #12f7ff);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), #12f7ff);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -837,31 +860,31 @@ header.sticky{
     padding: 0 2rem;
 }
 
-.port-box:hover .port-content{
+.port-box:hover .port-content {
     opacity: 1;
     cursor: pointer;
     background-color: transparent;
     backdrop-filter: blur(10px);
 }
 
-.port-box:hover .port-image img{
+.port-box:hover .port-image img {
     transform: scale(1.1);
 }
 
-.port-content h3{
+.port-content h3 {
     font-size: 1.5rem;
     font-weight: 600;
     text-shadow: 0 0 2px black;
 }
 
-.port-content p{
+.port-content p {
     font-size: 16px;
     font-weight: 300;
     margin: 5px 0 15px 0;
     text-shadow: 0 0 2px black;
 }
 
-.port-content a{
+.port-content a {
     background: #fff;
     border-radius: 50%;
     display: inline-flex;
@@ -874,18 +897,18 @@ header.sticky{
     transition: 0.3s;
 }
 
-.port-content a i{
+.port-content a i {
     font-size: 1.3rem;
     color: #0c0c1d;
 }
 
-.port-content a:hover{
+.port-content a:hover {
     transform: scale(0.8);
 }
 
 
 /*Contact Section*/
-.contact{
+.contact {
     color: white;
     background: linear-gradient(180deg, #0c0c1d, #111132);
     min-height: 90vh;
@@ -893,7 +916,7 @@ header.sticky{
     padding: 0 10% 0;
 }
 
-.main-text2{
+.main-text2 {
     width: 100%;
     text-align: center;
     margin-bottom: 3rem;
@@ -901,12 +924,12 @@ header.sticky{
     padding-top: 90px;
 }
 
-.main-text2 h2{
+.main-text2 h2 {
     font-weight: 700;
     font-size: 40px;
 }
 
-.contact form{
+.contact form {
     text-align: center;
     max-width: 50rem;
     margin: 1rem auto;
@@ -914,7 +937,7 @@ header.sticky{
 }
 
 .contact form input,
-.contact form textarea{
+.contact form textarea {
     width: 100%;
     color: white;
     background: black;
@@ -924,17 +947,17 @@ header.sticky{
     padding: .7rem;
 }
 
-.contact form textarea{
-    resize: none  ;
+.contact form textarea {
+    resize: none;
 }
 
-.formBtn{
+.formBtn {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.formBtn .btn1{
+.formBtn .btn1 {
     cursor: pointer;
     font-size: 1rem;
 }
@@ -942,7 +965,7 @@ header.sticky{
 
 /*Footer Section*/
 
-.footer-text p{
+.footer-text p {
     width: 100vw;
     text-align: center;
     padding: 25px 0;
@@ -951,14 +974,14 @@ header.sticky{
     color: #bdbdbd;
 }
 
-.top{
+.top {
     position: fixed;
     bottom: 2.1rem;
     right: 2.1rem;
-    white-space:inherit;
+    white-space: inherit;
 }
 
-.top i{
+.top i {
     color: #000;
     background: #0ef;
     font-size: 20px;
@@ -966,13 +989,15 @@ header.sticky{
     border-radius: 0.5rem;
 }
 
-@media(max-width:1051px){
-    .about, .home{
+@media(max-width:1051px) {
+
+    .about,
+    .home {
         gap: 7rem;
     }
 }
 
-@media(max-width:736px){
+@media(max-width:736px) {
     .project-gallery {
         display: flex;
         flex-direction: column;
@@ -981,162 +1006,193 @@ header.sticky{
     }
 }
 
-@media(max-width:991px){
+@media(max-width:991px) {
+
     header,
-    header.sticky{
+    header.sticky {
         padding: 15px 5%;
     }
-    section{
+
+    section {
         padding: 50px 5%;
     }
-    .navbar a{
+
+    .navbar a {
         padding: 8px 15px;
     }
 }
 
-@media(max-width:895px){
-    .home{
+@media(max-width:895px) {
+    .home {
         flex-direction: column;
         gap: 0;
     }
-    .Home{
+
+    .Home {
         height: 952px;
     }
-    .about{
+
+    .about {
         display: ruby-text;
         height: 846px;
     }
-    .home-content{
+
+    .home-content {
         margin-top: 28px;
         order: 2;
     }
-    .about_content{
+
+    .about_content {
         margin-top: 30px;
     }
+
     .img_about img {
         max-width: 300px;
     }
-    .img-box img{
+
+    .img-box img {
         width: 300px;
     }
-    .home-img{
+
+    .home-img {
         margin-top: 22px;
     }
-    .home-content, .about_content{
+
+    .home-content,
+    .about_content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
-    }.project{
+    }
+
+    .project {
         height: 1454px;
     }
 }
 
-@media(max-width:768px){
-    #menu-icon{
+@media(max-width:768px) {
+    #menu-icon {
         display: block;
         transition: all 1s ease;
     }
 
-    #menu-icon.bx-x{
+    #menu-icon.bx-x {
         transform: rotate(-180deg);
     }
-    .navbar{
+
+    .navbar {
         display: flex;
         position: absolute;
         top: -1000px;
         right: 0;
         left: 0;
         flex-direction: column;
-        background: linear-gradient(180deg, #0c0c1d, #111132, transparent);
+        background: #0c0c1da8;
         backdrop-filter: blur(10px);
         text-align: left;
         padding: 0 5%;
         transition: all 0.8s ease;
     }
-    .navbar a{
+
+    .navbar a {
         display: block;
         padding-bottom: 1rem;
         font-size: 1rem;
     }
-    .navbar a:hover{
+
+    .navbar a:hover {
         color: #12f7ff;
         text-shadow: 0 0 10px #12f7ff,
             0 0 20px #12f7ff,
             0 0 30px #12f7ff;
         border-bottom: none;
     }
-    .navbar.open{
+
+    .navbar.open {
         top: 100%;
         transition: all 0.8s ease;
-    } 
+    }
 }
 
-@media(max-width:425px){
+@media(max-width:425px) {
     .Home {
         min-height: 944px;
     }
-    .skill-left{
+
+    .skill-left {
         width: 73%;
     }
-    .skill-main{
+
+    .skill-main {
         flex-direction: column;
     }
-    .circle-bar{
+
+    .port-content p {
+        display: none;
+    }
+
+    .circle-bar {
         min-width: 288px;
     }
-    .port-box{
+
+    .port-box {
         width: 281px;
         height: 182px;
         margin-bottom: -23px;
     }
-    .about{
+
+    .about {
         min-height: 865px;
         gap: 0rem;
     }
-    .contact{
+
+    .contact {
         height: 663px;
     }
-    .footer-text p{
+
+    .footer-text p {
         font-size: 12px;
     }
-    .home-content h3{
+
+    .home-content h3 {
         font-size: 25px;
     }
-    .home-content p{
+
+    .home-content p {
         font-size: 15px;
     }
-    .home-content h1{
+
+    .home-content h1 {
         font-size: 33px;
     }
-    .port-content p{
+
+    .port-content p {
         font-size: 12px;
     }
-    .port-content h2{
+
+    .port-content h2 {
         font-size: 20px;
     }
+
     .img_about img {
         max-width: 255px;
     }
-    .img-box img{
+
+    .img-box img {
         width: 255px;
     }
 }
 
-@media(max-width:1160px){
-    .section-service .service-box{
+@media(max-width:1160px) {
+    .section-service .service-box {
         max-width: 279px;
     }
 }
 
-@media(max-width:759px){
-    .section-service .service-box{
+@media(max-width:759px) {
+    .section-service .service-box {
         max-width: 340px;
     }
 }
-
-
-
-
-
