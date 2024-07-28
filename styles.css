@@ -23,6 +23,19 @@
     border-radius: 5rem;
 }
 
+.skeleton{
+    opacity: .7;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading{
+    0%{
+        background-color: hsl(200,20%,70%);
+    }
+    100%{
+        background-color: hsl(200,20%,95%);
+    }
+}
 
 body{
     font-family: "Poppins", sans-serif;
@@ -30,7 +43,7 @@ body{
 
 .Home{
     background: linear-gradient(180deg, #0c0c1d, #111132);
-    height: 100vh;
+    height: 107vh;
 }
 
 header{
@@ -987,7 +1000,7 @@ header.sticky{
         gap: 0;
     }
     .Home{
-        height: 870px;
+        height: 952px;
     }
     .about{
         display: ruby-text;
@@ -1062,7 +1075,7 @@ header.sticky{
 
 @media(max-width:425px){
     .Home {
-        min-height: 1045px;
+        min-height: 944px;
     }
     .skill-left{
         width: 73%;
@@ -1097,11 +1110,31 @@ header.sticky{
     .home-content h1{
         font-size: 33px;
     }
+    .port-content p{
+        font-size: 12px;
+    }
+    .port-content h2{
+        font-size: 20px;
+    }
+    .img_about img {
+        max-width: 255px;
+    }
+    .img-box img{
+        width: 255px;
+    }
 }
 
+@media(max-width:1160px){
+    .section-service .service-box{
+        max-width: 279px;
+    }
+}
 
-
-
+@media(max-width:759px){
+    .section-service .service-box{
+        max-width: 340px;
+    }
+}
 
 
 
