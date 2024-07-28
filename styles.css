@@ -1129,10 +1129,6 @@ header.sticky {
         flex-direction: column;
     }
 
-    .port-content p {
-        display: none;
-    }
-
     .circle-bar {
         min-width: 288px;
     }
@@ -1194,5 +1190,11 @@ header.sticky {
 @media(max-width:759px) {
     .section-service .service-box {
         max-width: 340px;
+    }
+}
+
+@media(max-width:516px) {
+    .port-content p {
+        display: none;
     }
 }
